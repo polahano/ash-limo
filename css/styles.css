@@ -674,7 +674,7 @@ main {
   font-size: 0.94rem;
 }
 .vehicle-icon {
-  height: 180px;
+  width: 100%;
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
