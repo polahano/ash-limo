@@ -226,3 +226,97 @@
   syncRadioCards();
   showStep(0);
 })();
+
+// Testimonials Carousel
+(function () {
+  const carousel = document.querySelector('.testimonials-carousel');
+  if (!carousel) return;
+
+  const track = carousel.querySelector('.carousel-track');
+  const slides = carousel.querySelectorAll('.testimonial-slide');
+  const prevBtn = carousel.querySelector('.prev-btn');
+  const nextBtn = carousel.querySelector('.next-btn');
+  const dots = carousel.querySelectorAll('.carousel-dot');
+
+  let currentIndex = 0;
+  let autoplayInterval;
+
+  function updateDots() {
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    const translateX = -100 * currentIndex;
+    track.style.transform = `translateX(${translateX}%)`;
+    updateDots();
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    goToSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    goToSlide(currentIndex);
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  // Event listeners
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    stopAutoplay();
+    startAutoplay(); // Restart autoplay after manual interaction
+  });
+
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    stopAutoplay();
+    startAutoplay(); // Restart autoplay after manual interaction
+  });
+
+  // Add click listeners to dots
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      goToSlide(index);
+      stopAutoplay();
+      startAutoplay();
+    });
+  });
+
+  // Pause autoplay on hover
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', startAutoplay);
+
+  // Initialize
+  updateDots();
+  startAutoplay();
+
+  // Handle keyboard navigation
+  carousel.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      prevSlide();
+      stopAutoplay();
+      startAutoplay();
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      nextSlide();
+      stopAutoplay();
+      startAutoplay();
+    }
+  });
+
+  // Make carousel focusable for keyboard navigation
+  carousel.setAttribute('tabindex', '0');
+})();
