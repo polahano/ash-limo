@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 320' fill='none'>
+  <rect x='16' y='32' width='488' height='256' rx='28' fill='rgba(255,255,255,0.02)' stroke='rgba(255,255,255,0.08)'/>
+  <path d='M60 228H468' stroke='#24395B' stroke-width='2'/>
+  <circle cx='134' cy='228' r='18' stroke='#F1DBB0' stroke-width='3'/>
+  <circle cx='386' cy='228' r='18' stroke='#F1DBB0' stroke-width='3'/>
+  <path d='M84 220L104 178C108 170 116 166 126 166H212C224 166 232 170 238 178L260 208H420C434 208 446 214 452 224' stroke='#F1DBB0' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/>
+  <path d='M288 196L314 118C318 108 328 102 340 102H402C416 102 426 108 434 122L458 166H492' stroke='#88B7FF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/>
+  <circle cx='332' cy='206' r='14' stroke='#88B7FF' stroke-width='3'/>
+  <circle cx='430' cy='206' r='14' stroke='#88B7FF' stroke-width='3'/>
+  <path d='M76 138H218' stroke='#24395B' stroke-width='2' stroke-dasharray='8 8'/>
+  <path d='M306 82H470' stroke='#24395B' stroke-width='2' stroke-dasharray='8 8'/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none'>
+  <rect x='1' y='1' width='62' height='62' rx='18' fill='url(#g1)' stroke='rgba(255,255,255,0.14)'/>
+  <path d='M18 42L29 18H35L46 42H39L36.5 36H27.3L24.8 42H18ZM29.6 31.3H34.3L32 25.4L29.6 31.3Z' fill='#F6E6C6'/>
+  <path d='M16 49C22 45 28 43 34 43C40 43 46 45 48 47' stroke='#D8B16B' stroke-width='2.4' stroke-linecap='round'/>
+  <defs>
+    <linearGradient id='g1' x1='6' y1='4' x2='58' y2='60' gradientUnits='userSpaceOnUse'>
+      <stop stop-color='#D8B16B' stop-opacity='.24'/>
+      <stop offset='1' stop-color='#88B7FF' stop-opacity='.16'/>
+    </linearGradient>
+  </defs>
+</svg>

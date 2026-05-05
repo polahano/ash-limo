@@ -1,0 +1,9 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 320' fill='none'>
+  <rect x='36' y='48' width='448' height='224' rx='28' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.08)'/>
+  <path d='M110 222H410' stroke='#24395B' stroke-width='2'/>
+  <path d='M130 210V128L200 102L260 118L320 102L390 128V210' stroke='#F1DBB0' stroke-width='4' stroke-linejoin='round'/>
+  <path d='M160 210V146M220 210V130M300 210V130M360 210V146' stroke='#F1DBB0' stroke-width='3'/>
+  <path d='M112 228C146 192 190 172 260 172C330 172 374 192 408 228' stroke='#88B7FF' stroke-width='4' stroke-linecap='round'/>
+  <path d='M184 72L236 100M336 72L284 100' stroke='#24395B' stroke-width='3' stroke-linecap='round'/>
+  <circle cx='260' cy='156' r='16' stroke='#D8B16B' stroke-width='3'/>
+</svg>
